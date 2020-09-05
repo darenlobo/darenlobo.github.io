@@ -208,7 +208,7 @@ l {
   text-align: center;
 }
 
-.footer {
+#footer {
   padding: 3rem 9rem 3rem 9rem;
   background-color: #0C1114;
 }
@@ -223,7 +223,7 @@ l {
   margin-top: 4.5rem;
 }
 
-.footer .column {
+#footer .column {
   flex: 50%;
   padding: 0px;
   margin: 1.5rem;
