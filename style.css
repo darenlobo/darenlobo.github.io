@@ -219,7 +219,6 @@ l {
 }
 
 #hero .row {
-  justify-content: left;
   margin-top: 4.5rem;
 }
 
@@ -295,7 +294,7 @@ l {
 .row .logo {
 
   width: auto;
-  margin-right: 3rem;
+  margin: 0rem 1.5rem ;
   height: 1.5rem;
   opacity: 0.6;
   filter: contrast(60%);
