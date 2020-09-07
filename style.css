@@ -505,11 +505,19 @@ l {
 @media screen and (max-width: 1024px) {
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 740px) {
   #hero .button {
     display: flex;
     justify-content: center;
     padding: auto;
     text-align: center;
+  }
+
+  #projects .row {
+    display: grid;
+    width: 100%;
+  }
+  .row .container {
+    width: 100vw;
   }
 }
