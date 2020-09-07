@@ -420,9 +420,9 @@ l {
 } */
 
 @keyframes boing {
-  0%   {top: 0px;}
-  50%  {top: -20px;}
-  100% {top: 0px;}
+  0%   {top: 0rem;}
+  50%  {top: -1rem;}
+  100% {top: 0rem;}
 }
 
 
