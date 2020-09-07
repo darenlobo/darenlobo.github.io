@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+
         <title>Portfolio | Daren Lobo</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="favicon.png" />
       	<link href="style.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/527c36ba88.js" crossorigin="anonymous"></script>
         <script type="text/javascript">
-
-
             var imgObj = null;
             var animate ;
             var size = null;
@@ -23,16 +25,8 @@
             }
 
             function bounce() {
-
                   imgObj.style.animation = 'boing 1s 0s 1';
                   setTimeout(reset,1100);
-
-              // if (imgObj.style.animation =='0s ease 0s 1 normal none running none')  {
-              //   imgObj.style.animation = 'boing 1s 0s 1';
-              // } else {
-              //   imgObj.style.animation =  '0s ease 0s 1 normal none running none';
-              //
-              // }
             }
 
             function reset() {
@@ -55,8 +49,8 @@
 
         <section id="hero">
           <h2><l>Hey, I'm </l>Daren.</h2>
-          <h3><l>Let's build something cool!</l></h3>
-          <p>I love creating elegant solutions to complex problems, thus
+          <!-- <h3><l>Let's build something cool!</l></h3> -->
+          <p>I love creating elegant solutions to complex problems, and
             crafting beautiful experiences. My growth mindset helps me
             see problems as challenges, and hurdles as opportunities. </p>
             <a href="files/resume.pdf" class="button secondary">Download My Resume</a>
