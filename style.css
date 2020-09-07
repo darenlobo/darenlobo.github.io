@@ -520,4 +520,10 @@ l {
   .row .container {
     width: 100vw;
   }
+
+  #footer .row {
+    display: grid;
+    width: 100%;
+  }
+
 }
