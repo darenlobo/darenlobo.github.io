@@ -230,6 +230,8 @@ l {
   height: 15rem;
 }
 
+
+
 .button {
   font-weight: 600;
   background-color: none;
@@ -369,7 +371,7 @@ l {
    position: relative;
    display: inline-block;
    width: 100%;
-   height: 16.5rem;
+   height: 18rem;
    overflow: hidden;
    margin: 0 auto;
 }
@@ -412,6 +414,18 @@ l {
 }
 
 /* KEYFRAME DECLARATIONS */
+/* 
+#luvbutton {
+  animation: boing 1s 0s 1;
+} */
+
+@keyframes boing {
+  0%   {top: -10px;
+  50%  {top: -10px}
+  100% {top: -10px;}
+}
+
+
 @keyframes fade-animation-1 {
     0%, 25%, 100% {
         opacity:0
