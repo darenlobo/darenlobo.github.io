@@ -143,15 +143,6 @@ l {
 }
 
 
-.row .logo {
-
-  width: auto;
-  margin: 0rem 1.5rem ;
-  height: 1.5rem;
-  opacity: 0.6;
-  filter: contrast(60%);
-}
-
 
 .spaced {
   margin: 0rem 0.5rem;
@@ -244,7 +235,7 @@ l {
 }
 
 #hero {
-  padding: 6rem 15% 3rem 15%;
+  padding: 6rem 15% 1.5rem 15%;
 
 }
 
@@ -261,6 +252,17 @@ l {
 
 #hero .row {
   margin-top: 4.5rem;
+  display: block;
+  height: 3rem;
+}
+
+.row .logo {
+
+  width: auto;
+  margin: 0rem 1rem 1.5rem 0rem;
+  height: 1.5rem;
+  opacity: 0.6;
+  filter: contrast(60%);
 }
 
 
@@ -423,7 +425,7 @@ l {
 }
 
 #footer .column {
-  flex: 50%;
+
   padding: 0px;
   margin-right: 3rem;
   height: 15rem;
