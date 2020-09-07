@@ -13,7 +13,7 @@
             var animate ;
             var size = null;
             var deflt = null;
-            var i =null;
+            var i =0;
 
             function init() {
                imgObj = document.getElementById('luvbutton');
@@ -24,8 +24,9 @@
 
             function bounce() {
 
-              imgObj.style.animation = 'boing 1s 0s 1';
-              setTimeout(reset,1100);
+                  imgObj.style.animation = 'boing 1s 0s 1';
+                  setTimeout(reset,1100);
+
               // if (imgObj.style.animation =='0s ease 0s 1 normal none running none')  {
               //   imgObj.style.animation = 'boing 1s 0s 1';
               // } else {

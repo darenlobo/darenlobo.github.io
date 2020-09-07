@@ -414,15 +414,15 @@ l {
 }
 
 /* KEYFRAME DECLARATIONS */
-/* 
+/*
 #luvbutton {
   animation: boing 1s 0s 1;
 } */
 
 @keyframes boing {
-  0%   {top: -10px;
-  50%  {top: -10px}
-  100% {top: -10px;}
+  0%   {top: 0px;}
+  50%  {top: -20px;}
+  100% {top: 0px;}
 }
 
 
