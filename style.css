@@ -254,11 +254,9 @@ l {
 #hero .row {
   margin-top: 4.5rem;
   display: block;
-  height: 3rem;
 }
 
 .row .logo {
-
   width: auto;
   margin: 0rem 1rem 1.5rem 0rem;
   height: 1.5rem;
@@ -545,6 +543,11 @@ l {
     padding: auto;
     text-align: center;
     margin-top: 1.5rem;
+  }
+
+  .row .logo {
+    width: auto;
+    height: 0.75rem;
   }
 
   .testimonial-slider ul.slider {
