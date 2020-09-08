@@ -323,8 +323,9 @@ l {
 #testimonials {
   padding: 3rem 15% 3rem 15%;
   display:flex;
-
 }
+
+
 .quotebox {
   display: grid;
   margin: auto;
@@ -419,9 +420,9 @@ l {
 
 
 #footer {
-  padding: 3rem 15% 3rem 15%;
+  padding: 3rem 15%;
   background-color: #0C1114;
-  overflow: visible;
+
 }
 
 /* #footer .column {
@@ -435,7 +436,7 @@ l {
 #footer .column {
   flex: 50%;
   padding: 0px;
-  margin: 0% 5%;
+  margin: 0rem 5% 1.5rem;
 }
 
 
@@ -566,5 +567,24 @@ l {
   }
   #footer .rating a {
     margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quotebox {
+    width: 100%;
+  }
+
+
+  #hero {
+    padding: 6rem 5% 1.5rem 5%;
+  }
+
+  #tslider {
+    padding: 3rem 5%;
+  }
+
+  #footer {
+    padding: 3rem 5%;
   }
 }
