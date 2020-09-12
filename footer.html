@@ -1,0 +1,75 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+
+        
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+      	<link href="style.css" rel="stylesheet" type="text/css">
+
+
+        <script src="https://kit.fontawesome.com/527c36ba88.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var imgObj = null;
+            var animate ;
+            var size = null;
+            var deflt = null;
+            var i =0;
+
+            function init() {
+               imgObj = document.getElementById('luvbutton');
+               // deflt = imgObj.style.fontSize;
+               imgObj.style.position= 'relative';
+               imgObj.style.top = '0px';
+            }
+
+            function bounce() {
+                  imgObj.style.animation = 'boing 1s 0s 1';
+                  setTimeout(reset,1100);
+            }
+
+            function reset() {
+              imgObj.style.animation =  '0s ease 0s 1 normal none running none';
+            }
+
+            window.onload= init;
+
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+<div class="row">
+  <div class="column">
+    <h3>Get in Touch</h3>
+    <ul class="vertical-list">
+    <li><a href="mailto:lobo.daren@gmail.com">lobo.daren@gmail.com</a></li>
+
+      <div class="rating">
+        <a href="https://www.linkedin.com/in/darenlobo" class="fab fa-linkedin-in"></a>
+        <a href="https://www.behance.net/darenlobo"class="fab fa-behance"></a>
+        <a href="https://www.instagram.com/darenlobo" class="fab fa-instagram"></a>
+        <a href="https://www.twitter.com/thedarenlobo" class="fab fa-twitter"></a>
+      </div>
+
+    <li><a href="#"> </a></li>
+    <li><a href="#"> </a></li>
+  </ul></div>
+  <div class="column"><h3>Case Studies</h3><ul class="vertical-list">
+  <li><a href="https://www.behance.net/gallery/85087797/HotBox-A-Meal-Planning-App-for-Families">Hotbox</a></li>
+  <li><a href="https://www.behance.net/gallery/100111645/Connectplus">Connectplus</a></li>
+  <li><a href="https://www.behance.net/gallery/85330907/Bolt-Motorcycles-48-hour-design-challenge">Bolt</a></li>
+</ul></div>
+  <div class="column"><h3>Blog</h3><ul class="vertical-list">
+  <li>Coming Soon!</li>
+  <!-- <li><a href="#">Designing remotely for Microsoft</a></li>
+  <li><a href="#">Building an atomic design system</a></li>
+  <li><a href="#">Rueful Ruminations</a></li>
+  <li><a href="#">Zarasthura's Fall</a></li> -->
+</ul></div>
+</div>
+<div class="row">
+  <h6>Designed with <a id="luvbutton" onclick="bounce()" class="fas fa-heart spaced"></a> in Mumbai<h6>
+</div>
