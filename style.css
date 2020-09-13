@@ -196,11 +196,6 @@ l {
   padding: 6rem 10% ;
 }
 
-.textwrapper {
-  max-width: 32rem;
-}
-
-
 .maintxt {
   max-width: 32rem;
 }
@@ -586,7 +581,7 @@ l {
   }
   .sidetxt {
     margin-left: 6rem;
-    max-width: 16rem;
+    max-width: 21rem;
   }
 
   #hero .row {

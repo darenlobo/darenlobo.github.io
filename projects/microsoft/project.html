@@ -18,7 +18,7 @@
         background-color: #074A25;
       }
       #hero {
-        padding: 7.5rem 10% 4.5rem;
+        padding: 7.5rem 10% 3rem;
 
       }
       .photo {
@@ -29,12 +29,16 @@
       }
 
       .bg1 {
-        color: #f6f5f5;
-        background-color: #01672F;
+        /* color: #f6f5f5;
+        background-color: #01672F; */
+        color: #000;
+        background-color: #fff;
       }
       .bg2 {
-        color: #f6f5f5;
-        background-color: #074A25;
+        /* color: #f6f5f5;
+        background-color: #074A25; */
+        color: #000;
+        background-color: #eee;
       }
 
 
@@ -82,7 +86,7 @@
         <section id="hero" class="photo">
             <h2>Microsoft | <l> Summer Internship 2020</l></h2>
             <!-- <h3><l>Let's build something cool!</l></h3> -->
-            <p>Designing remotely for Excel and Emerging Markets, I learned </p>
+            <p>I had the wonderful opportunity to work at Microsoft, where I designed for Excel and Emerging Markets. In this post, I describe my experiences.</p>
             <!-- <a href="files/resume.pdf" class="button secondary">Download My Resume</a>
             <a href="#footer" class="button">Get In Touch</a> -->
         </section>
@@ -118,7 +122,7 @@
           </div> -->
 
 
-          <section class="description bg2">
+          <section id="o1" class="description bg2">
 
                     <span><h2>01</h2></span>
                     <span><h3>Introduction</h3></span>
@@ -135,68 +139,77 @@
 
 
                       </div>
-                      <div class="sidetxt">
-                        <img src="team.gif"></img>
-                        <br>
-                        <br>
-                        <h4>My Team</h4>
-                        <p>
-                        Non curabitur gravida arcu. Dui ut ornare lectus sit amet est placerat. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.</p>
 
-
-                      </div>
                     </div>
 
           </section>
 
-          <section class="description bg1">
-                <div class="textwrapper">
-                            <span><h2>02</h2></span>
-                            <span><h3>Going Virtual</h3></span>
+          <section id="o2" class="description bg1">
 
+                    <span><h2>02</h2></span>
+                    <span><h3>Going Virtual</h3></span>
+                    <div class="articlewrapper">
+                        <div class="maintxt">
                                                     <p>It was a strange experience, at first, to interact with my coworkers as disembodied, talking heads on a screen. As any designer will tell you, it’s hard to imagine doing any kind of UX work without a room, a whiteboard, and a stack of post-its, without all-night brainstorming sessions and coffee breaks together!</p>
 
                                                     <p>As time went on, however, I found myself feeling closer and closer to my virtual team, connecting for our daily “sync ups” and “chai pe charcha” sessions. We celebrated coworker’s birthdays and even a virtual baby shower!</p>
 
                                                     <p>My UX Coaches, Karthik and Kalyani, proved to be excellent sources of inspiration (and banter) throughout the internship. Karthik, who worked on Excel Web, always had time to help me out when I stumbled and was a constant mentor over the three months we spent together. Kalyani, an alumna of IDC, and I spent hours reminiscing fond memories at IIT Bombay. Having worked on Excel Mobile, and specifically Cards View, she brought invaluable insights to the table!</p>
+                        </div>
+                        <div class="sidetxt">
+                          <img src="team-picture.gif"></img>
+                          <br>
+                          <br>
+                          <h4>The Dream Team</h4>
+                          <p>
+                          Our team consisted of engineering interns, coaches, project managers and of course, yours truly as the design intern. </p>
+
 
                         </div>
+                    </div>
           </section>
 
-          <section class="description bg2">
-                <div class="textwrapper">
+          <section id="o3" class="description bg2">
+
                     <span><h2>03</h2></span>
                     <span><h3>Initial Research</h3></span>
-
+                    <div class="articlewrapper">
+                        <div class="maintxt">
                                             <p>Our project leveraged the extensive market research already conducted by Microsoft. Additionally, I decided to do my own primary research by talking to several SMB owners, managers, and frontline workers to find out how they use Excel, the problems with mobile data entry, and about how they manage their day to day business. Across most of the scenarios, some interesting facts emerged. </p>
 
                                             <p>In most businesses, there were three main kinds of people involved in daily business operations. Our initial goal was to develop a tool for the “Tech support guy” to create customized apps to be used by Admins or frontline workers. These apps would be applied for various tasks like data entry, viewing monthly averages, or managing employee data, which was already stored in Excel workbooks. </p>
 
                                             <p>To take a more specific scenario, consider one of the businesses I visited, a bakery. There existed several secondary personas; the Baker, the Cashier, the Delivery Driver, et al. The primary persona, the App Designer, needs to create different “workflows” for each of these to make their tasks easier.</p>
 
-                </div>
+
+
+
+                        </div>
+                    </div>
           </section>
 
-          <section class="description bg1">
-                <div class="textwrapper">
+          <section id="o4" class="description bg1">
+
                             <span><h2>04</h2></span>
                             <span><h3>Rationalizing Workflows</h3></span>
-
+                            <div class="articlewrapper">
+                                <div class="maintxt">
                                                     <p>After identifying roughly what our platform needed to accomplish, the next step was to determine how these created apps would work – what are the basic set of “building blocks” one needs to create a basic app? Let’s say a local grocery store wanted to set up an app for customers to order groceries during the lockdown, or maybe a way for them to record transactions and maintain a credit book.</p>
 
                                                     <p>What comparisons can we draw between these kinds of apps and larger scale eCommerce apps in the market? How can we understand these actions & app data through the lens of Excel?</p>
 
                                                     <p>I found that on a high level, we can address most day to day scenarios with the model below. Here, List View/Table View refers to some way to visualize table data on mobile. Similarly, the Detail View is a zoomed-in view of a single row of Excel Data. I decided to leverage Excel Cards View for this, to take advantage of the research that was already done, and infra already built.</p>
 
-                                                    <p>The next challenge was how to empower a user to put these different components together, with only basic Excel knowledge. Existing no-code app creation platforms in the market are reasonably non-trivial and have a significant learning curve. How can a typical grocery store worker create a customized app? Also, how do I take the existing Cards View, and transform it into something customizable and unique?</p>
-
-                        </div>
+                                                    <p>The next challenge was how to empower a user to put these different components together, with only basic Excel knowledge. Existing no-code app creation platforms in the market are reasonably non-trivial and have a significant learning curve. How can a typical grocery store worker create a customized app? Also, how do I take the existing Cards View, and transform it into something customizable and unique?</p></div>
+                            </div>
           </section>
 
-          <section class="description bg2">
-                <div class="textwrapper">
+          <section id="o5" class="description bg2">
+
                     <span><h2>05</h2></span>
                     <span><h3>Sketches, Wireframes and Redlines</h3></span>
+                    <div class="articlewrapper">
+                        <div class="maintxt">
 
                                             <p>I had to find a balance between customizability and ease of use. Since this project was targeting emerging markets, and specifically SMBs, I decided to prioritize ease of use and to design a platform intuitive to the most basic Excel user. The best way to accomplish this seemed to be through a linear method, guiding the user from beginning to creation of the custom app.</p>
 
@@ -204,12 +217,8 @@
 
                                             <p>I leveraged Microsoft’s Fluent design system to create a prototype that fits right into the Office ecosystem. After providing the redlines to the development interns, I assisted them as they proceeded to build the code. </p>
 
-                                            <p>Once the minimum viable product(MVP) was ready, we set out to enable the maximum level of customization possible within the restricted framework. As part of the Garage Hackathon, we enabled custom navigation, themes, branding, and other features to add a personalized touch to the product.</p>
-
-
-
-
-                </div>
+                                            <p>Once the minimum viable product(MVP) was ready, we set out to enable the maximum level of customization possible within the restricted framework. As part of the Garage Hackathon, we enabled custom navigation, themes, branding, and other features to add a personalized touch to the product.</p></div>
+                    </div>
           </section>
 
 
