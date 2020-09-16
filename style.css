@@ -326,7 +326,7 @@ r {
 
 
 .container {
-  flex: 50%;
+  flex: 1;
   height: 24rem;
   position: relative;
 }
@@ -598,10 +598,13 @@ r {
 
 @media screen and (max-width: 1024px) {
 
-  .container {
-    height: 27rem;
-  }
 
+  #projects .row {
+    display: grid;
+  }
+  .row .container {
+    width: 100vw;
+  }
   .testimonial-slider ul.slider {
     height: 21rem;
   }
@@ -640,13 +643,7 @@ r {
   .testimonial-slider ul.slider {
     height: 27rem;
   }
-  #projects .row {
-    display: grid;
-    width: 100%;
-  }
-  .row .container {
-    width: 100vw;
-  }
+
 
   #footer .row {
     display: grid;
