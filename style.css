@@ -327,7 +327,7 @@ r {
 
 .container {
   flex: 50%;
-  height: 18rem;
+  height: 24rem;
   position: relative;
 }
 
@@ -599,7 +599,7 @@ r {
 @media screen and (max-width: 1024px) {
 
   .container {
-    height: 21rem;
+    height: 27rem;
   }
 
   .testimonial-slider ul.slider {
