@@ -664,8 +664,12 @@ r {
 
   #hero {
     padding: 6rem 5% 1.5rem 5%;
+    height: 100%;
   }
 
+ #navbar .horizontal-list {
+   margin-right: 5%;
+ }
   #projects l {
     display: none;
   }
