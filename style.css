@@ -327,7 +327,7 @@ r {
 
 .container {
   flex: 1;
-  height: 24rem;
+  height: auto;
   position: relative;
 }
 
@@ -335,7 +335,7 @@ r {
   display: block;
   width: auto;
   margin: 2rem auto;
-  height: 80%;
+  max-height: 18rem;
   transition: 0.5s ease;
 }
 
@@ -658,6 +658,10 @@ r {
 }
 
 @media screen and (max-width: 480px) {
+  .container .image {
+    width: 80%;
+    height:auto;
+  }
   .quotebox {
     width: 100%;
   }
