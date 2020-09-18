@@ -17,8 +17,9 @@ body, .article {
   line-height: 1.5rem;
   margin: auto;
   background: var(--colBG);
-	background-position: center;
   color: var(--colWhite);
+	background-position: center;
+
 }
 h1, .h1 {
   font-size: 4.65rem;
@@ -294,7 +295,7 @@ r {
 }
 
 #hero {
-  padding: 6rem 10% 1.5rem 10%;
+  padding: 6rem 10% 1.5rem;
 
 }
 
@@ -324,7 +325,10 @@ r {
 }
 
 
-
+#projects l {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 .container {
   flex: 1;
   height: auto;
@@ -345,11 +349,12 @@ r {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
+  /* text-align: center; */
   transition: 0.5s ease;
   background-color: inherit;
+  padding: 6rem 10%;
 }
+
 
 .hidden {
   opacity: 0;
@@ -363,7 +368,7 @@ r {
   filter: blur(0.2rem);
 }
 
-.overlay h3 {
+/* .overlay h3 {
   color: white;
   position: absolute;
   top: 50%;
@@ -373,12 +378,12 @@ r {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+ */
 
 
 
 #testimonials {
-  padding: 3rem 10% 3rem 10%;
+  padding: 3rem 10% 3rem;
   display:flex;
 }
 
@@ -666,9 +671,16 @@ r {
     width: 100%;
   }
 
+  .container {
+  padding: 3rem;
+}
+
+  .overlay {
+    margin: 0rem 5%;
+  }
   #hero {
     padding: 6rem 5% 1.5rem 5%;
-    height: 100%;
+
   }
 
  #navbar .horizontal-list {
@@ -693,4 +705,11 @@ r {
       /* margin-left: -50px;
     margin-top: -50px; */
   }
+}
+
+@media screen and (max-width: 360px) {
+ .overlay {
+   padding-top: 3rem;
+ }
+
 }
