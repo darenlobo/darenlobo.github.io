@@ -352,7 +352,7 @@ r {
   /* text-align: center; */
   transition: 0.5s ease;
   background-color: inherit;
-  padding: 4.5rem 10%;
+  padding: 4.5rem 13% 4.5rem 7%;
 }
 
 .overlay h3 {
@@ -374,6 +374,7 @@ r {
 
 .container:hover .overlay {
   opacity: 0.95;
+  padding: 4.5rem 10%;
 }
 
 .container:hover .image {
