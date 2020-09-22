@@ -309,12 +309,13 @@ g {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 1.8rem 0rem 1.8rem 0rem;
+  padding: 1.8rem 0rem;
   height: 1.8rem;
   background-color: inherit;
   opacity: 0.98;
   z-index: 100;
   width:100%;
+  transition: 0.3s ease;
 }
 
 #hero {
@@ -762,10 +763,17 @@ g {
     }
 }
 
-@media screen and (max-width: 330px) {
-  
+@media screen and (max-width: 350px) {
+  .tag {
+    display: none;
+  }
+  .overlay p {
+    -webkit-line-clamp: 3;
+  }
  /* .overlay {
    padding-top: 4rem;
  } */
+}
 
+@media screen and (min-height: 1000px) {
 }

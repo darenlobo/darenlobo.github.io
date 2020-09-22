@@ -47,6 +47,17 @@
               imgObj.style.animation =  '0s ease 0s 1 normal none running none';
             }
 
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "0.9rem 0rem";
+
+              } else {
+                document.getElementById("navbar").style.padding = "1.8rem 0rem";
+
+              }
+            }
             window.onload= init;
 
         </script>
@@ -102,8 +113,8 @@
 
                     <p>
                     Folx helps you find people who love the same places you do, ensuring your dates are always fun, safe, and engaging. I collaborated with the core team to design a modern, unique, and competitive mobile app. </p>
-                    <h6 class="tag">UI Design</h6><h6 class="tag">Client Work</h6>
-                    <a href="" class="button soft">Coming Soon<i class="fas fa-exclamation-triangle spaced"></i></a>
+                    <h6 class="tag">UI Design</h6><h6 class="tag">Client Project</h6>
+                    <a  class="button soft">Coming Soon<i class="fas fa-exclamation-triangle spaced"></i></a>
 
                   </div>
                 </div>
@@ -117,7 +128,7 @@
 
                     <h6 class="tag">UX Design</h6><h6 class="tag">UI Design</h6><h6 class="tag">Internship</h6>
 
-                    <a href="" class="button soft">Coming Soon<i class="fas fa-exclamation-triangle spaced"></i></a>
+                    <a  class="button soft">Coming Soon<i class="fas fa-exclamation-triangle spaced"></i></a>
 
                   </div>
                 </div>
