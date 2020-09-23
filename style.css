@@ -1,10 +1,23 @@
+
+/* Debug Mode */
+
+
+/* * {
+  outline: 2px solid red;
+} */
+
+
+/* Debug Mode End*/
+
+
 html, .root {
   font-size: 20px;
   line-height: 36px;
   scroll-behavior: smooth;
-  --colWhite: #f5f6f6;
+  --colWhite: #fcfcfc;
   --colPrim: #EE6F57;
-  --colBG: #13232C; /*122935*/
+  --colBG: #101B20;
+  --colBGhi: #13232C; /*122935*/
   --colBGDark: #0C1114;
   --colYellow: #FFB627;
   --colGrey1: #404040;
@@ -73,10 +86,12 @@ p, ul, ol, pre, table, blockquote {
 blockquote {
     display: block;
     font-weight: 300;
-    margin-block-start: 1.8rem;
-    margin-block-end: 1.8rem;
-    margin-inline-start: 3.6rem;
-    margin-inline-end: 5.4rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-block-start: 2.7rem;
+    margin-block-end: 2.7rem;
+    margin-inline-start: 2.7rem;
+    margin-inline-end: 2.7rem;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
@@ -191,19 +206,14 @@ g {
 
 
 .column {
-  float: left;
   padding: 0px;
-
+  margin: 2rem;
 }
 
 .left {
-  width: 50%;
-  padding-right: 10%;
 }
 
 .right {
-  width: 50%;
-
 }
 
 /* Clear floats after the columns */
@@ -216,13 +226,90 @@ g {
 
 #intro {
   padding: 3.6rem 10% ;
-}
-.description {
-  padding: 6rem 10% ;
+  background-color: var(--colBGhi);
 }
 
+#intro h3 {
+  margin-bottom: 1.8rem;
+}
+
+#intro .column {
+  max-width: 24rem;
+}
+
+.full-width {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 36rem;
+  overflow: hidden;
+}
+.full-width img {
+  box-sizing: border-box;
+  width: 100vw;
+  /* max-width: 96rem; */
+  height:auto;
+  margin: 0rem auto;
+}
+.projectStats {
+  text-align: center;
+  margin: 5.4rem auto 0rem;
+  opacity: 0.8;
+  /* background-color: red; */
+  /* width:100%; */
+}
+
+.projectStats th,td {
+  padding:0rem 1.2rem;
+}
+
+.projectStats th {
+  font-size: 0.7rem;
+  font-weight: 300;
+  vertical-align: top;
+  /* background-color: #ff0000; */
+
+}
+
+.projectStats td {
+  vertical-align: top;
+  width: fit-contents;
+  font-size: 1rem;
+  font-weight: 600;
+
+  /* background-color: #0000FF; */
+
+}
+
+
+.description {
+  padding: 5.4rem 10% ;
+}
+.description h3 {
+  margin-bottom: 0rem;
+  color: var(--colPrim);
+}
+.description h1 {
+  margin: 0rem 0rem 1.8rem;
+}
+
+.outer-wrapper {
+  max-width: 40rem;
+  margin: auto;
+}
+
+.statement h3 {
+  margin-top:0rem;
+  width: 7.2rem;
+}
+.statement {
+  background-color: var(--colBGDark);
+}
 .maintxt {
-  max-width: 32rem;
+}
+
+.maintxt img {
+  margin-bottom: 1.8rem;
 }
 .sidetxt {
   color: var(--colGrey2);
@@ -319,12 +406,12 @@ g {
 }
 
 #hero {
-  padding: 6rem 10% 1.8rem;
+  padding: 5.4rem 10% 1.8rem;
 
 }
 
 #hero .txtwrapper{
-  max-width: 36rem;
+  max-width: 40rem;
 }
 
 #hero p {
@@ -336,14 +423,19 @@ g {
 #hero .row {
   margin-top: 5.4rem;
   flex-wrap: wrap;
+
   /* display: block; */
 }
 
+#hero h3 {
+  font-weight: 300;
+  opacity: 0.8;
+}
 .row .logo {
   width: auto;
   margin: 0rem 1rem 1.8rem 0rem;
   height: 1.8rem;
-  opacity: 0.6;
+  opacity: 0.8;
   filter: contrast(60%);
 }
 
@@ -435,7 +527,8 @@ g {
   display: grid;
   margin: auto;
   text-align: center;
-  width:80%;
+
+  max-width: 40rem;
 }
 
 .quotebox .logo {
@@ -631,25 +724,36 @@ g {
 
 
 /* Media queries */
+@media screen and (min-width:1600px) {
+  #hero .txtwrapper {
+    margin: 0rem auto;
+  }
+}
 @media screen and (min-width:1024px) {
   .articlewrapper {
     display: flex;
   }
+
+
   .sidetxt {
-    margin-left: 6rem;
+    margin-left: 5.4rem;
     max-width: 21rem;
   }
 
-  #hero .row {
-    justify-content: flex-start;
-  }
 }
+
+
 @media screen and (max-width: 1920px) {
 }
 
 @media screen and (max-width: 1024px) {
 
-
+  #intro .row {
+    display:grid;
+  }
+  #intro .column {
+    max-width: 40rem;
+  }
   #projects .row {
     display: grid;
   }
@@ -713,14 +817,10 @@ g {
     width: 80%;
     height:auto;
   }
-  .quotebox {
-    width: 100%;
-  }
 
   .container {
   padding: 3.6rem 5%;
 }
-
 
 .container:hover .overlay {
   opacity: 1;
@@ -730,7 +830,7 @@ g {
     margin: 0rem 5%;
   } */
   #hero {
-    padding: 6rem 5% 1.8rem 5%;
+    padding: 5.4rem 5% 1.8rem 5%;
 
   }
 
