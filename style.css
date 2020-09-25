@@ -85,13 +85,12 @@ p, ul, ol, pre, table, blockquote {
 
 blockquote {
     display: block;
+    border-left: 2px solid var(--colWhite);
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    margin-block-start: 2.7rem;
-    margin-block-end: 2.7rem;
-    margin-inline-start: 2.7rem;
-    margin-inline-end: 2.7rem;
+    padding: 1.8rem;
+    margin: 1.8rem 0rem;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
@@ -203,6 +202,9 @@ g {
   margin: 0rem 0.6rem;
 }
 
+ h6 .spaced {
+  margin: 0rem 0.3rem;
+}
 
 
 .column {
@@ -241,8 +243,8 @@ g {
   display:flex;
   align-items: center;
   justify-content: center;
-  max-height: 36rem;
-  overflow: hidden;
+  /* max-height: 36rem;
+  overflow: hidden; */
 }
 .full-width img {
   box-sizing: border-box;
@@ -289,7 +291,7 @@ g {
   margin-bottom: 0rem;
   color: var(--colPrim);
 }
-.description h1 {
+.description h2 {
   margin: 0rem 0rem 1.8rem;
 }
 
@@ -310,6 +312,7 @@ g {
 
 .maintxt img {
   margin-bottom: 1.8rem;
+  max-width: 100%;
 }
 .sidetxt {
   color: var(--colGrey2);
@@ -539,22 +542,22 @@ g {
 }
 
 
-.quotebox p{
-  font-weight: 200;
-  margin-bottom: 0rem;
+.quotebox blockquote{
+  margin:0rem;
+  padding: 0rem;
+  border:none;
+}
+/* .quotebox blockquote::before{
+  font-size: 1.8rem;
+  font-weight: 600;
+  content: '“';
 }
 
-.quotebox p::before{
-  font-size: 1.4rem;
+.quotebox blockquote::after{
+  font-size: 1.8rem;
   font-weight: 600;
-  content: open-quote;
-}
-
-.quotebox p::after{
-  font-size: 1.4rem;
-  font-weight: 600;
-  content: close-quote;
-}
+  content: '”';
+} */
 .rating {
   display:block;
   margin: 1.8rem 0rem;
@@ -584,7 +587,7 @@ g {
    position: relative;
    display: inline-block;
    width: 100%;
-   height: 23.4rem;
+   height: 19.8rem;
    overflow: hidden;
    margin: 0 auto;
 }
