@@ -14,7 +14,8 @@ html, .root {
   font-size: 20px;
   line-height: 36px;
   scroll-behavior: smooth;
-  --colWhite: #fcfcfc;
+  quotes: '“' '”' '‘' '’';
+  --colWhite: #fafafa;
   --colPrim: #EE6F57;
   --colBG: #101B20;
   --colBGhi: #13232C; /*122935*/
@@ -209,7 +210,7 @@ g {
 
 .column {
   padding: 0px;
-  margin: 2rem;
+  margin: 0rem 2rem;
 }
 
 .left {
@@ -235,10 +236,6 @@ g {
   margin-bottom: 1.8rem;
 }
 
-#intro .column {
-  max-width: 24rem;
-}
-
 .full-width {
   display:flex;
   align-items: center;
@@ -262,7 +259,7 @@ g {
 }
 
 .projectStats th,td {
-  padding:0rem 1.2rem;
+  padding:0rem 1.5vw;
 }
 
 .projectStats th {
@@ -296,18 +293,33 @@ g {
 }
 
 .outer-wrapper {
-  max-width: 40rem;
+  max-width: 44rem;
   margin: auto;
 }
+.outer-wrapper p{
+  margin: 0rem 2rem 1.8rem;
+}
+.outer-wrapper h2{
+  margin: 0rem 2rem 1.8rem;
+}
+.outer-wrapper h3{
+  margin: 0rem 2rem;
+}
+.outer-wrapper blockquote{
+  margin: 0rem 3.8rem 1.8rem;
+}
+
 
 .statement h3 {
-  margin-top:0rem;
+  margin:0rem 0rem 1.8rem;
   width: 7.2rem;
+}
+.statement .row {
+  max-width: 56rem;
+  margin: 0rem auto;
 }
 .statement {
   background-color: var(--colBGDark);
-}
-.maintxt {
 }
 
 .maintxt img {
@@ -426,7 +438,6 @@ g {
 #hero .row {
   margin-top: 5.4rem;
   flex-wrap: wrap;
-
   /* display: block; */
 }
 
@@ -457,13 +468,12 @@ g {
 .container .image {
   display: block;
   width: auto;
-  margin: 2rem auto;
+  margin: 1.8rem auto;
   max-height: 19.6rem;
   transition: 0.5s ease;
 }
 
 .overlay {
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -650,7 +660,7 @@ g {
 } */
 
 #footer .column {
-  flex: 50%;
+  flex: 1;
   padding: 0px;
   margin: 0rem 5%;
 }
@@ -784,10 +794,12 @@ g {
   #intro .row {
     display:grid;
   }
-  #intro .column {
-    max-width: 40rem;
-  }
+
   #projects .row {
+    display: grid;
+  }
+
+  .statement .row {
     display: grid;
   }
   .row .container {
@@ -822,6 +834,10 @@ g {
     margin-top: 1.8rem;
   }
 
+  #intro .column {
+    max-width: 24rem;
+  }
+
   .row .logo {
     width: auto;
     height: 1rem;
@@ -839,6 +855,7 @@ g {
   }
   #footer .column {
     text-align: center;
+    margin:0rem;
   }
   #footer .rating a {
     margin: 0.6rem;
