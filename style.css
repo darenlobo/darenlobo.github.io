@@ -86,12 +86,15 @@ p, ul, ol, pre, table, blockquote {
 
 blockquote {
     display: block;
-    border-left: 2px solid var(--colWhite);
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    padding: 1.8rem;
-    margin: 1.8rem 0rem;
+    margin:0px;padding:0px;
+}
+.maintxt blockquote {
+  border-left: 2px solid var(--colWhite);
+  padding: 1.8rem;
+  margin: 1.8rem 0rem;
 }
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
@@ -235,6 +238,10 @@ g {
 #intro h3 {
   margin-bottom: 1.8rem;
 }
+#intro .column {
+  flex:1;
+  /* margin: 0rem 1.5rem; */
+}
 
 .full-width {
   display:flex;
@@ -282,7 +289,7 @@ g {
 
 
 .description {
-  padding: 5.4rem 10% ;
+  padding: 7.2rem 10% 0rem ;
 }
 .description h3 {
   margin-bottom: 0rem;
@@ -297,13 +304,13 @@ g {
   margin: auto;
 }
 .outer-wrapper p{
-  margin: 0rem 2rem 1.8rem;
+  margin: 0rem 4rem 1.8rem;
 }
 .outer-wrapper h2{
-  margin: 0rem 2rem 1.8rem;
+  margin: 0rem 4rem 1.8rem;
 }
 .outer-wrapper h3{
-  margin: 0rem 2rem;
+  margin: 0rem 4rem;
 }
 .outer-wrapper blockquote{
   margin: 0rem 3.8rem 1.8rem;
@@ -311,7 +318,7 @@ g {
 
 
 .statement h3 {
-  margin:0rem 0rem 1.8rem;
+  margin:0rem 0rem 0rem;
   width: 7.2rem;
 }
 .statement .row {
@@ -320,10 +327,11 @@ g {
 }
 .statement {
   background-color: var(--colBGDark);
+  padding: 3.6rem 10%;
 }
 
 .maintxt img {
-  margin-bottom: 1.8rem;
+  margin: 1.8rem auto 3.6rem;
   max-width: 100%;
 }
 .sidetxt {
@@ -463,6 +471,7 @@ g {
   height: auto;
   position: relative;
   box-sizing: border-box;
+  overflow:hidden;
 }
 
 .container .image {
@@ -552,11 +561,6 @@ g {
 }
 
 
-.quotebox blockquote{
-  margin:0rem;
-  padding: 0rem;
-  border:none;
-}
 /* .quotebox blockquote::before{
   font-size: 1.8rem;
   font-weight: 600;
@@ -649,6 +653,9 @@ g {
 
 #footer h3 {
   margin-bottom: 1.8rem;
+}
+#footer h6 {
+  margin: 0rem;
 }
 
 /* #footer .column {
