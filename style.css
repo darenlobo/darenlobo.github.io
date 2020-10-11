@@ -1,11 +1,11 @@
 
 /* Debug Mode */
 
-
-/* * {
+/*
+* {
   outline: 2px solid red;
-} */
-
+}
+ */
 
 /* Debug Mode End*/
 
@@ -157,7 +157,6 @@ g {
   opacity: 0.6;
 }
 .horizontal-list {
-	height: 5.4rem;
 	padding: 0px 0px;
   margin-right: 10%;
 }
@@ -289,7 +288,7 @@ g {
 
 
 .description {
-  padding: 7.2rem 10% 0rem ;
+  padding: 7.2rem 10% 3.6rem ;
 }
 .description h3 {
   margin-bottom: 0rem;
@@ -430,10 +429,12 @@ g {
 
 #hero {
   padding: 5.4rem 10% 1.8rem;
-
 }
 
-#hero .txtwrapper{
+#hero .txtwrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
   max-width: 40rem;
 }
 
@@ -775,8 +776,18 @@ g {
 
 /* Media queries */
 @media screen and (min-width:1600px) {
+  html, .root {
+    font-size: 22px;
+    line-height: 1.8rem;
+  }
+  /* #hero p {
+    font-size: 1.4rem;
+  } */
   #hero .txtwrapper {
-    margin: 0rem auto;
+    margin: 3.6rem auto 7.2rem;
+  }
+  #hero p {
+    margin-bottom: 5.4rem;
   }
 }
 @media screen and (min-width:1024px) {
