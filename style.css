@@ -333,6 +333,10 @@ g {
   margin: 1.8rem auto 3.6rem;
   max-width: 100%;
 }
+
+.maintxt h3 {
+  margin-bottom:1.8rem;
+}
 .sidetxt {
   color: var(--colGrey2);
 }
