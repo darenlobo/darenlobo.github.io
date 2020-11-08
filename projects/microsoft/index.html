@@ -32,11 +32,7 @@
       }
 
 
-      body > .description {
 
-        color: var(--colWhite);
-        background-color: var(--colBG);
-      }
       /* body  > .description:nth-child(odd) {
 
         color: #222;
@@ -131,6 +127,17 @@
             </div>
           </section>
 
+          <section class="description statement">
+            <div class="row">
+              <div class="column left">
+                <h3>Disclaimer</h3>
+              </div>
+              <div class="column right">
+                <blockquote>
+                  The details of this project are protected under a Non-Disclosure Agreement, therefore screens, redlines & wireframes are omitted from this document.
+                </blockquote>
+            </div>
+          </section>
 
           <!-- <div class="row sidenotes imgtxt">
             <div class="column left">
@@ -178,30 +185,25 @@
                                                     <p>My UX Coaches, Karthik and Kalyani, proved to be excellent sources of inspiration (and banter) throughout the internship. Karthik, who worked on Excel Web, always had time to help me out when I stumbled and was a constant mentor over the three months we spent together. Kalyani, an alumna of IDC, and I spent hours reminiscing fond memories at IIT Bombay. Having worked on Excel Mobile, and specifically Cards View, she brought invaluable insights to the table!</p>
                         </div>
                   </div>
-                        <!-- <div class="sidetxt">
-                          <img src="team-picture.gif"></img>
-                          <br>
-                          <br>
-                          <h4>The Dream Team</h4>
-                          <p>
-                          Our team consisted of engineering interns, coaches, project managers and of course, yours truly as the design intern. </p>
 
-
-                        </div> -->
                     </div>
           </section>
 
           <section id="o3" class="description">
               <div class="outer-wrapper">
-                    <span><h3>03</h3></span>
-                    <span><h2>Initial Research</h2></span>
-                    <div class="articlewrapper">
-                        <div class="maintxt">
-                                            <p>Our project leveraged the extensive market research already conducted by Microsoft. Additionally, I decided to do my own primary research by talking to several SMB owners, managers, and frontline workers to find out how they use Excel, the problems with mobile data entry, and about how they manage their day to day business. Across most of the scenarios, some interesting facts emerged. </p>
+                <span><h3>03</h3></span>
+                <span><h2>Initial Research</h2></span>
+                <div class="articlewrapper">
+                  <div class="maintxt">
+                    <p>Our project leveraged the extensive market research already conducted by Microsoft. Additionally, I decided to do my own primary research by talking to several SMB owners, managers, and frontline workers to find out how they use Excel, the problems with mobile data entry, and about how they manage their day to day business. Across most of the scenarios, some interesting facts emerged. </p>
 
-                                            <p>In most businesses, there were three main kinds of people involved in daily business operations. Our initial goal was to develop a tool for the “Tech support guy” to create customized apps to be used by Admins or frontline workers. These apps would be applied for various tasks like data entry, viewing monthly averages, or managing employee data, which was already stored in Excel workbooks. </p>
+                    <img src="insights.png"></img>
 
-                                            <p>To take a more specific scenario, consider one of the businesses I visited, a bakery. There existed several secondary personas; the Baker, the Cashier, the Delivery Driver, et al. The primary persona, the App Designer, needs to create different “workflows” for each of these to make their tasks easier.</p>
+                    <p>In most businesses, there were three main kinds of people involved in daily business operations. Our initial goal was to develop a tool for the “Tech support guy” to create customized apps to be used by Admins or frontline workers. These apps would be applied for various tasks like data entry, viewing monthly averages, or managing employee data, which was already stored in Excel workbooks. </p>
+
+                    <img src="personas.png"></img>
+
+                    <p>To take a more specific scenario, consider one of the businesses I visited, a bakery. There existed several secondary personas; the Baker, the Cashier, the Delivery Driver, et al. The primary persona, the App Designer, needs to create different “workflows” for each of these to make their tasks easier.</p>
 
 
 
@@ -221,7 +223,7 @@
                                                     <p>After identifying roughly what our platform needed to accomplish, the next step was to determine how these created apps would work – what are the basic set of “building blocks” one needs to create a basic app? Let’s say a local grocery store wanted to set up an app for customers to order groceries during the lockdown, or maybe a way for them to record transactions and maintain a credit book.</p>
 
                                                     <p>What comparisons can we draw between these kinds of apps and larger scale eCommerce apps in the market? How can we understand these actions & app data through the lens of Excel?</p>
-
+                                                    <img src="skeleton.png"></img>
                                                     <p>I found that on a high level, we can address most day to day scenarios with the model below. Here, List View/Table View refers to some way to visualize table data on mobile. Similarly, the Detail View is a zoomed-in view of a single row of Excel Data. I decided to leverage Excel Cards View for this, to take advantage of the research that was already done, and infra already built.</p>
 
                                                     <p>The next challenge was how to empower a user to put these different components together, with only basic Excel knowledge. Existing no-code app creation platforms in the market are reasonably non-trivial and have a significant learning curve. How can a typical grocery store worker create a customized app? Also, how do I take the existing Cards View, and transform it into something customizable and unique?</p></div>
