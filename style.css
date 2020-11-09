@@ -558,7 +558,6 @@ g {
   display: grid;
   margin: auto;
   text-align: center;
-
   max-width: 40rem;
 }
 
@@ -567,22 +566,32 @@ g {
   width: auto;
   margin: 1.8rem auto;
   height: 1.8rem;
+  opacity: 0.6;
 }
 
+.quotebox span {
+  margin: 1.8rem auto;
+  opacity: 0.8;
+  padding-top:1.8rem;
+  border-top: 2px solid var(--colWhite);
+  width: 50%;
+}
 
-/* .quotebox blockquote::before{
+.quotebox blockquote::before{
   font-size: 1.8rem;
   font-weight: 600;
+  opacity: 0.3;
   content: '“';
 }
 
 .quotebox blockquote::after{
   font-size: 1.8rem;
   font-weight: 600;
+  opacity: 0.3;
   content: '”';
-} */
+}
 .rating {
-  display:block;
+  display: none;
   margin: 1.8rem 0rem;
   color: var(--colYellow);
 }
@@ -633,11 +642,11 @@ g {
             animation: fade-animation-2 12s infinite;
 }
 
-/* .testimonial-slider ul.slider li:nth-child(3) {
-    -webkit-animation: fade-animation-3 15s infinite;
-            animation: fade-animation-3 15s infinite;
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 12s infinite;
+            animation: fade-animation-3 12s infinite;
 }
-.testimonial-slider ul.slider li:nth-child(4) {
+/* .testimonial-slider ul.slider li:nth-child(4) {
     -webkit-animation: fade-animation-4 15s infinite;
             animation: fade-animation-4 15s infinite;
 } */
@@ -694,20 +703,29 @@ g {
   100% {top: 0rem;}
 }
 
-/* 2 boxes */
+/* 3 boxes */
 @keyframes fade-animation-1 {
-    0%, 50%, 100% {
-        opacity:0
+    0%, 33%, 66%, 100% {
+        opacity: 0;
     }
-    3%, 47% {
+    3%, 30% {
         opacity: 1;
     }
 }
 @keyframes fade-animation-2 {
-    0%, 50% {
-        opacity:0
+    0%, 33%, 66%, 100% {
+        opacity: 0;
     }
-    53%, 97% {
+    36%, 63% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-animation-3 {
+    0%, 33%, 66%, 100% {
+        opacity: 0;
+    }
+    69%, 97% {
         opacity: 1;
     }
 }
