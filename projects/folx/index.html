@@ -22,44 +22,7 @@
 
 
         <script src="https://kit.fontawesome.com/527c36ba88.js" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            var imgObj = null;
-            var animate ;
-            var size = null;
-            var deflt = null;
-            var i =0;
-
-            function init() {
-               imgObj = document.getElementById('luvbutton');
-               // deflt = imgObj.style.fontSize;
-               imgObj.style.position= 'relative';
-               imgObj.style.top = '0px';
-            }
-
-            function bounce() {
-                  imgObj.style.animation = 'boing 1s 0s 1';
-                  setTimeout(reset,1100);
-            }
-
-            function reset() {
-              imgObj.style.animation =  '0s ease 0s 1 normal none running none';
-            }
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("navbar").style.padding = "0.9rem 0rem";
-                document.getElementById("navbar").style.background = "var(--colBG)";
-              } else {
-                document.getElementById("navbar").style.padding = "1.8rem 0rem";
-                document.getElementById("navbar").style.background = "none";
-
-              }
-            }
-
-            window.onload= init;
-
-        </script>
+        <script src="../../js/scripts.js" type="text/javascript"></script>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
         <style>
