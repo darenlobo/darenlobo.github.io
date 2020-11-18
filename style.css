@@ -681,7 +681,7 @@ g {
 }
 
 #footer {
-  padding: 3.6rem 10%;
+  padding: 3.6rem 10% 1.8rem;
   background-color: var(--colBGDark);
 }
 
@@ -694,7 +694,7 @@ g {
 
 #footer .row {
   overflow: visible;
-  margin-top: 1.8rem;
+  margin-top: 3.6rem;
 }
 /* #footer .column {
 
