@@ -264,35 +264,17 @@ g {
   height:auto;
   margin: 0rem auto;
 }
+
 .projectStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   text-align: center;
   margin: 5.4rem auto 0rem;
   opacity: 0.9;
-  /* background-color: red; */
-  /* width:100%; */
+  align-content: center;
 }
 
-.projectStats th,td {
-  padding:0rem 1.5vw;
-}
 
-.projectStats th {
-  font-size: 0.7rem;
-  font-weight: 300;
-  vertical-align: top;
-  /* background-color: #ff0000; */
-
-}
-
-.projectStats td {
-  vertical-align: top;
-  width: fit-contents;
-  font-size: 1rem;
-  font-weight: 600;
-
-  /* background-color: #0000FF; */
-
-}
 
 
 .description {
@@ -311,16 +293,16 @@ g {
   margin: auto;
 }
 .outer-wrapper p{
-  margin: 0rem 4rem 1.8rem;
+  margin: 0rem min(4rem, 10%) 1.8rem;
 }
 .outer-wrapper h2{
-  margin: 0rem 4rem 1.8rem;
+  margin: 0rem min(4rem, 10%) 1.8rem;
 }
 .outer-wrapper h3{
-  margin: 0rem 4rem;
+  margin: 0rem min(4rem, 10%);
 }
 .outer-wrapper blockquote{
-  margin: 0rem 3.8rem 1.8rem;
+  margin: 0rem min(4rem, 10%) 1.8rem;
 }
 
 
