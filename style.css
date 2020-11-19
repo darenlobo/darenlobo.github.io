@@ -520,6 +520,13 @@ g {
   margin-bottom: 0rem;
 }
 
+.overlay .tagStrip {
+  flex-flow: row wrap;
+  height: 3.6rem;
+  overflow-y: hidden;
+  justify-content: center;
+}
+
 .hidden {
   opacity: 0;
 }
