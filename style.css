@@ -245,13 +245,19 @@ g {
   background-color: var(--colBGhi);
 }
 
+#intro p {
+
+}
+
 #intro h3 {
   margin-bottom: 1.8rem;
 }
 #intro .column {
   flex:1;
+  max-width: 28rem;
   /* margin: 0rem 1.5rem; */
 }
+
 
 .full-width {
   display:flex;
