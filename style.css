@@ -298,7 +298,8 @@ g {
 }
 
 .outer-wrapper {
-  max-width: 44rem;
+  width: min(44rem,100%);
+  overflow: hidden;
   margin: auto;
 }
 .outer-wrapper p{
@@ -421,7 +422,7 @@ g {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 1.8rem 4rem;
+  padding: 0.9rem 4rem;
   box-sizing: border-box;
   height: 3.6rem;
   background: none;
@@ -469,6 +470,7 @@ g {
   font-weight: 300;
   opacity: 0.8;
 }
+
 .row .logo {
   width: auto;
   margin: 0rem 1rem 1.8rem 0rem;
@@ -992,6 +994,10 @@ g {
     .overlay p {
       -webkit-line-clamp: 2;
     }
+
+    .outer-wrapper h1 {
+      font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -1000,6 +1006,11 @@ g {
   }
   .overlay p {
     -webkit-line-clamp: 3;
+  }
+
+  #navbar {
+    font-size: 0.8rem;
+    padding: 0.9rem 1rem;
   }
  /* .overlay {
    padding-top: 4rem;
