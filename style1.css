@@ -1,0 +1,71 @@
+/* Debug Mode */
+
+/*
+* {
+  outline: 2px solid red;
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+/* Debug Mode End*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+
+html, .root {
+  font-size: 22px;
+  line-height: 1.8em;
+  scroll-behavior: smooth;
+  quotes: '“' '”' '‘' '’';
+  --colWhite: #fcfcfc;
+  --colPrim: #EE6F57;
+  --colBG: #101B20;
+  --colBGhi: rgba(19,35,44,0.3); /*122935*/
+  --colBGDark: #0C1114;
+  --colYellow: #FFB627;
+  --colGrey1: #404040;
+  --colGrey2: #cccccc;
+  --sidepadding: 5%;
+}
+
+body {
+  margin: 0 var(--sidepadding);
+}
+navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  outline: solid 2px red;
+  gap: 2rem;
+}
+
+.hero {
+  background-color: var(--colBGhi);
+  width: 100%;
+  display: flex;
+}
+
+.herotext {
+  width: 50%;
+  padding: 2rem 1.8rem;
+}
+.heroimg {
+  width: 50%;
+}
+
+.projects {
+  display: grid;
+  margin: 1.8rem 0;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  grid-auto-rows: auto;
+
+}
+
+.thumbnail {
+  height: 16rem;
+  background-color: grey;
+  padding: 1rem;
+}
