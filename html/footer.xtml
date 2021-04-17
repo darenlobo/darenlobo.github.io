@@ -25,5 +25,5 @@
     </div> -->
   </div>
   
-    <h6>© 2020 | Designed with <a id="luvbutton" onclick="bounce()" class="fas fa-heart spaced"></a> By Daren Lobo</h6>
+    <h6>© 2020 | Designed with <a id="luvbutton" onclick="bounce()" class="fas fa-heart"></a> By Daren Lobo</h6>
   

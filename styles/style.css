@@ -195,6 +195,7 @@ navbar {
 }
 
 footer {
+  background-color: #101518;
   padding: 40px calc(calc(100vw - var(--contentWidth)) / 2);
 }
 
@@ -229,6 +230,10 @@ footer h3 {
 footer h6 {
   margin-top: 120px;
   text-align: center;
+}
+
+footer #luvbutton {
+  margin: 0 0.2rem;
 }
 
 @-webkit-keyframes boing {
@@ -429,10 +434,17 @@ footer h6 {
   padding: 120px calc(calc(100vw - var(--contentWidth)) / 2);
   text-align: center;
   background-color: #101B20;
+  color: #dd816f;
 }
 
 #header h3 {
   font-weight: 300;
+  margin-top: 0;
+}
+
+#header h1 {
+  color: #ccc;
+  margin: 80px 0;
 }
 
 #header .projectStats {
@@ -448,11 +460,7 @@ footer h6 {
 }
 
 #header .projectStats h6 {
-  margin-bottom: 0;
-}
-
-#header .projectStats h3 {
-  margin-top: 0;
+  margin: 0;
 }
 
 #intro {
@@ -516,10 +524,13 @@ footer h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0b1013;
+  background-color: #101518;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 80px calc(calc(100vw - var(--contentWidth)) / 2);
 }
 
@@ -533,14 +544,13 @@ footer h6 {
   font-size: 1.5rem;
   line-height: 40px;
   font-weight: 300;
-  margin: 0 auto;
-  width: calc(100% - 8rem);
+  margin: 0;
 }
 
 .maintxt blockquote {
   border-left: 2px solid #dd816f;
   padding: 40px;
-  margin: 0;
+  margin: 40px 0;
 }
 
 .maintxt img {

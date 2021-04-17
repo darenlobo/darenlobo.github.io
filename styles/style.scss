@@ -6,7 +6,7 @@
 
 $colText: #ccc;
 $colPrim: #dd816f; //#EE6F57
-$colBG0: #0b1013;
+$colBG0: #101518;
 $colBG: #101B20;
 $colBG1: #0f2129;
 $colYellow: #FFB627;
@@ -176,6 +176,7 @@ navbar {
 }
 
 footer {
+  background-color: $colBG0;
   padding: 1 * $lineHeight $pageMargin;
   .row {
     display: flex;
@@ -200,6 +201,9 @@ footer {
   h6 {
     margin-top: 3 * $lineHeight;
     text-align: center;
+  }
+  #luvbutton {
+    margin: 0 0.2rem;
   }
 }
 
@@ -343,8 +347,14 @@ footer {
   padding: 3 * $lineHeight $pageMargin;
   text-align: center;
   background-color: $colBG;
+  color: $colPrim;
   h3 {
     font-weight: 300;
+    margin-top:0;
+  }
+  h1 {
+    color: $colText;
+    margin: 2 * $lineHeight 0;
   }
   .projectStats {
     display: grid;
@@ -354,10 +364,7 @@ footer {
     opacity: 0.9;
     align-content: center;
     h6 {
-      margin-bottom: 0;
-    }
-    h3 {
-      margin-top:0;
+      margin: 0;
     }
   }
 }
@@ -406,7 +413,7 @@ footer {
   display: flex;
   background-color: $colBG0;
   align-items: center;
-  // justify-content: center;
+  justify-content: center;
   padding: 2 * $lineHeight $pageMargin;
   h3 {
     margin: 0 4rem 0 0;
@@ -417,8 +424,8 @@ footer {
     font-size: 1.5rem;
     line-height: $lineHeight;
     font-weight: 300;
-    margin: 0 auto;
-    width: calc(100% - 8rem);
+    margin: 0;
+    
   }
 }
 
@@ -427,7 +434,7 @@ footer {
   blockquote {
     border-left: 2px solid $colPrim;
     padding: $lineHeight;
-    margin:0;
+    margin: $lineHeight 0;
   }
   img {
     margin: $lineHeight -2rem 2 * $lineHeight;
