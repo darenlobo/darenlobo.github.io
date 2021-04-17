@@ -33,6 +33,7 @@ function reset() {
 //     document.getElementById("navbar").style.opacity= "0";
 
 //   }
-}
+//}
 
 window.onload= init;
+

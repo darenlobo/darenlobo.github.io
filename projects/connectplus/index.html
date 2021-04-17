@@ -1,56 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
-
-        <title>Connectplus | Community App Design by Daren Lobo </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta name="description" content=""/>
-
-        <!-- OpenGraph Properties -->
-        <meta property="og:url" content="https://darenlobo.me" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Daren Lobo | UX Design Services" />
-        <meta property="og:description" content=""/>
-        <meta property="og:image" content="https://darenlobo.me/projects/connectplus/thumb.png"/>
-        <!-- OpenGraph Properties End -->
-
-        <link rel="shortcut icon" type="image/png" href="../../favicon.png" />
-      	<link href="../../style.css" rel="stylesheet" type="text/css"/>
-
-
-        <script src="https://kit.fontawesome.com/527c36ba88.js" crossorigin="anonymous"></script>
-        <script src="../../js/scripts.js" type="text/javascript"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-        <style>
-          #hero {
-            padding: 7.2rem 10% 5.4rem;
-            text-align: center;
-            background-color: var(--colBGDark);
-          }
-
-          .photo {
-            background-image: linear-gradient(to right, rgba(10,10,10,0.8),rgba(10,10,10,0.7)), url('hero.png');
-            background-position: center;
-            background-size: cover;
-          }
-
-        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </script>
+        <script type='text/javascript' language='javascript' src='https://darenlobo.me/js/load-components.js'></script>
     </head>
-
     <body>
-      <div id="navbar">
-        <ul class="horizontal-list">
-          <a href="https://darenlobo.me"><li><b>daren  <r>lobo</r></b></li></a>
-          <!-- <li><a href="#">About</a></li>
-          <li><a href="#">Résumé</a></li> -->
-        </ul>
-      </div>
+        <navbar></navbar>
 
-        <section id="hero" class="photo">
+        <section id="header" class="photo">
             <div class="outer-wrapper">
             <h3>Building Community Networks for Enterprises</h3>
             <h1>Connectplus | <l> Community Building</l></h1>
@@ -74,8 +32,7 @@
           </div>
         </section>
 
-        <section id="intro" class="description">
-          <div class="row">
+        <section id="intro" class="chapter">
             <div class="column left">
               <h3>About the Team</h3>
               <p>
@@ -88,7 +45,7 @@
               <p>
                At Connectplus, I solved challenges on the <r>UX</r>, <r>UI</r> and overall <r>product level</r>. I worked on the entire gamut of the design process, from research & conceptualization to production redlining.
               </p>
-          </div>
+            </div>
         </section>
 
         <!-- <div class="outer-wrapper">
@@ -99,31 +56,25 @@
         <!-- <div class="full-width">
           <img src="hero.png"></img>
         </div> -->
-        <section id="o1" class="description">
-            <div class="outer-wrapper">
-                  <span><h3>01</h3></span>
-                  <span><h2>Creating the Identity</h2></span>
-                  <div class="articlewrapper">
-                      <div class="maintxt">
-                                                  <p>Communities are the one great thing which have happened to humanity. People join communities to find relevant Connections, Content and Collaboration opportunities. ConnectPlus makes it easier for the members and the managers of the community in achieving the above goals easily.</p>
-                                                  <img src="features.png"></img>
-                                                  <p>The advantage of it being a startup was that much branding and design had not been set in stone, so I had a blank slate to put my ideas down. I had an opportunity to shape the product design on a high level. The big question we tried to answer:</p>
-                      </div>
-                  </div>
+        <section id="o1" class="chapter">
+            <h3>01</h3>
+            <h2>Creating the Identity</h2>
+            <div class="articlewrapper">
+                <div class="maintxt">
+                    <p>Communities are the one great thing which have happened to humanity. People join communities to find relevant Connections, Content and Collaboration opportunities. ConnectPlus makes it easier for the members and the managers of the community in achieving the above goals easily.</p>
+                    <img src="features.png"></img>
+                    <p>The advantage of it being a startup was that much branding and design had not been set in stone, so I had a blank slate to put my ideas down. I had an opportunity to shape the product design on a high level. The big question we tried to answer:</p>
+                </div>
             </div>
+            
         </section>
-        <section class="description statement">
-          <div class="row">
-            <!-- <div class="column left">
-              <h3>The Challenge</h3>
-            </div>
-            <div class="column right"> -->
-              <blockquote>
-                Could text messages be <r>more</r>?
-              </blockquote>
-          <!-- </div> -->
+        <section class="message">
+                <h3>The Challenge</h3>
+                <p>
+                    Could text messages be <r>more</r>?
+                </p>
         </section>
-        <section id="o2" class="description">
+        <section id="o2" class="chapter">
             <div class="outer-wrapper">
                   <span><h3>02</h3></span>
                   <span><h2>Circles as a symbol of Community</h2></span>
@@ -138,7 +89,7 @@
         <div class="full-width">
           <img src="mockup-hand.png"></img>
         </div>
-        <section id="o3" class="description">
+        <section id="o3" class="chapter">
             <div class="outer-wrapper">
                   <span><h3>03</h3></span>
                   <span><h2>Designing the Experience</h2></span>
@@ -151,14 +102,14 @@
                     </div>
                   </div>
         </section>
-        <section class="description statement">
+        <section class="message">
           <div class="row">
               <blockquote>
                 Create your community with <a href = "https://www.connectplus.co">ConnectPlus</a>
               </blockquote>
           </div>
         </section>
-        <section id="o4" class="description">
+        <section id="o4" class="chapter">
             <div class="outer-wrapper">
                   <span><h3>04</h3></span>
                   <span><h2>Conclusion and Learnings</h2></span>
@@ -171,54 +122,37 @@
                   </div>
         </section>
 
-      <section id="footer">
-        <div class="projectNav">
-          <div class="prev">
-            <h3><a href="https://darenlobo.me/projects/folx"><span class="fa fa-arrow-left spaced"></span>Folx</a></h3>
-          </div>
-          <div class="next">
-            <h3><a href="https://darenlobo.me/projects/microsoft">Microsoft<span class="fa fa-arrow-right spaced"></span></a></h3>
-          </div>
-        </div>
-        <!-- <div class="row">
-          <div class="column">
-            <h3>Get in Touch</h3>
-            <ul class="vertical-list">
 
-            <li>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/darenlobo?'});return false;">Schedule time with me</a>
-            </li>
-            <br>
+        <footer>
+          <div class="row">
+            <div class="column">
+              <h3>Get in Touch</h3>
 
-            <li><a href="mailto:lobo.daren@gmail.com">lobo.daren@gmail.com</a></li>
-
-            <li><div class="rating">
-              <a href="https://www.linkedin.com/in/darenlobo" class="fab fa-linkedin-in"></a>
-              <a href="https://www.behance.net/darenlobo"class="fab fa-behance"></a>
-              <a href="https://www.instagram.com/darenlobo" class="fab fa-instagram"></a>
-              <a href="https://www.twitter.com/thedarenlobo" class="fab fa-twitter"></a>
-            </div></li>
-          </ul></div>
-          <div class="column"><h3>Case Studies</h3>
-            <ul class="vertical-list">
-              <li><a href="https://www.behance.net/gallery/85087797/HotBox-A-Meal-Planning-App-for-Families">Hotbox <l>| Family Nutrition Planning</l></a></li>
-              <li><a href="https://www.behance.net/gallery/100111645/Connectplus">Connectplus <l>| Community Building for Enterprises</l></a></li>
-              <li><a href="https://www.behance.net/gallery/85330907/Bolt-Motorcycles-48-hour-design-challenge">Bolt <l>| Sprinklr's 48hr Design Challenge</l></a></li>
-            </ul>
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/darenlobo?'});return false;">Schedule time with me</a>
+                <a href="mailto:lobo.daren@gmail.com">lobo.daren@gmail.com</a>
+                <br>
+                <span>
+                    
+                    <a href="https://www.linkedin.com/in/darenlobo" class="fab fa-linkedin-in"></a>
+                    <a href="https://www.behance.net/darenlobo"class="fab fa-behance"></a>
+                    <a href="https://www.instagram.com/darenlobo" class="fab fa-instagram"></a>
+                    <a href="https://www.twitter.com/thedarenlobo" class="fab fa-twitter"></a>
+                </span>
+            </div>
+        	
+            <!-- <div class="column">
+                <h3>Case Studies</h3>
+                <a href="">Pregnancy Assistant <l>| ONI ELP</l></a>
+                <a href="">Connectplus <l>| Community Building for Enterprises</l></a>
+                <a href="">Excel Powered Apps <l>| Microsoft Internship</l></a>
+            </div> -->
           </div>
-          <div class="column"><h3>Blog</h3>
-            <ul class="vertical-list">
-            <li><g>Coming Soon!</g></li>
-
-            </ul>
-          </div>
-        </div> -->
-        <div class="row" style="overflow: visible;">
-          <h6>© 2020 | Designed with <a id="luvbutton" onclick="bounce()" class="fas fa-heart spaced"></a> By Daren Lobo</h6>
-        </div>
-      </section>
+          
+            <h6>© 2020 | Designed with <a id="luvbutton" onclick="bounce()" class="fas fa-heart spaced"></a> By Daren Lobo</h6>
+          
+        </footer>
 
     </body>
 </html>

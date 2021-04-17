@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /* Debug Mode */
-/* {
-  outline: 2px solid red;
-} */
 /* Debug Mode End*/
 /*1.8181818rem*/
 html, .root {
@@ -101,7 +98,7 @@ body sub {
 }
 
 body a {
-  color: #EE6F57;
+  color: #dd816f;
   text-decoration: inherit;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -116,7 +113,7 @@ body l {
 }
 
 body r {
-  color: #EE6F57;
+  color: #dd816f;
 }
 
 .tagStrip {
@@ -158,18 +155,18 @@ body r {
 }
 
 .primary {
-  background-color: #EE6F57;
+  background-color: #dd816f;
   color: #ccc;
   letter-spacing: 0.1rem;
   font-weight: 800;
 }
 
 .secondary {
-  border: 4px solid #EE6F57;
+  border: 4px solid #dd816f;
 }
 
 .secondary:hover {
-  background-color: #EE6F57;
+  background-color: #dd816f;
 }
 
 .soft {
@@ -300,11 +297,6 @@ footer h6 {
   margin-bottom: 0;
 }
 
-#projects l {
-  font-size: 1rem;
-  line-height: 40px;
-}
-
 #projects .hidden {
   opacity: 0;
   left: -40px;
@@ -319,10 +311,8 @@ footer h6 {
           box-sizing: border-box;
   overflow: hidden;
   border-radius: 0.6rem;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: perspective(1000px);
-          transform: perspective(1000px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 #projects .container .image {
@@ -334,8 +324,6 @@ footer h6 {
   max-height: 440px;
   max-width: 100%;
   margin: auto;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
 }
 
 #projects .container .overlay {
@@ -355,12 +343,25 @@ footer h6 {
   padding: 60px Max(40px, 80px);
 }
 
+#projects .container .overlay span {
+  margin: 40px 0;
+  height: 40px;
+}
+
 #projects .container .overlay h3 {
+  display: inline;
+  padding: 0;
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 40px 0;
+  margin-right: 0.5rem;
+}
+
+#projects .container .overlay l {
+  font-size: 1rem;
+  padding: 0;
+  line-height: 40px;
 }
 
 #projects .container .overlay p {
@@ -376,8 +377,6 @@ footer h6 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: auto;
-  -webkit-transform: translateZ(2000px);
-          transform: translateZ(2000px);
 }
 
 #projects .container:hover .overlay {
@@ -424,5 +423,132 @@ footer h6 {
 #experience .jobDetails p {
   margin-top: 40px;
   max-width: 32rem;
+}
+
+#header {
+  padding: 120px calc(calc(100vw - var(--contentWidth)) / 2);
+  text-align: center;
+  background-color: #101B20;
+}
+
+#header h3 {
+  font-weight: 300;
+}
+
+#header .projectStats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (Minmax(8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, Minmax(8rem, 1fr));
+  text-align: center;
+  margin: 80px auto 0;
+  opacity: 0.9;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#header .projectStats h6 {
+  margin-bottom: 0;
+}
+
+#header .projectStats h3 {
+  margin-top: 0;
+}
+
+#intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px calc(calc(100vw - var(--contentWidth)) / 2);
+  background-color: #0f2129;
+}
+
+#intro h3 {
+  margin-bottom: 40px;
+}
+
+#intro .column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20rem;
+          flex: 1 0 20rem;
+  margin: 0rem 1rem;
+}
+
+.full-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* max-height: 36rem;
+  overflow: hidden; */
+}
+
+.full-width img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  /* max-width: 96rem; */
+  height: auto;
+  margin: 0rem auto;
+}
+
+.chapter {
+  padding: 160px calc(calc(100vw - var(--contentWidth)) / 2) 80px;
+}
+
+.chapter h3 {
+  margin-bottom: 0rem;
+  color: #dd816f;
+}
+
+.chapter h2 {
+  margin: 0rem 0rem 40px;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0b1013;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px calc(calc(100vw - var(--contentWidth)) / 2);
+}
+
+.message h3 {
+  margin: 0 4rem 0 0;
+  width: 8rem;
+  color: #dd816f;
+}
+
+.message p {
+  font-size: 1.5rem;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 0 auto;
+  width: calc(100% - 8rem);
+}
+
+.maintxt blockquote {
+  border-left: 2px solid #dd816f;
+  padding: 40px;
+  margin: 0;
+}
+
+.maintxt img {
+  margin: 40px -2rem 80px;
+  width: calc(100% + 4rem);
+}
+
+.maintxt h3 {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=style.css.map */
