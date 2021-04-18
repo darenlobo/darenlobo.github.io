@@ -16,7 +16,7 @@ body, .article {
   line-height: 40px;
   margin: 0;
   background-color: #101B20;
-  color: #ccc;
+  color: #ddd;
   background-position: center;
 }
 
@@ -105,7 +105,7 @@ body a {
 }
 
 body a:hover {
-  color: #ccc;
+  color: #ddd;
 }
 
 body l {
@@ -156,7 +156,7 @@ body r {
 
 .primary {
   background-color: #dd816f;
-  color: #ccc;
+  color: #ddd;
   letter-spacing: 0.1rem;
   font-weight: 800;
 }
@@ -172,7 +172,7 @@ body r {
 .soft {
   padding: 20px 40px;
   mix-blend-mode: soft-light;
-  color: #ccc;
+  color: #ddd;
 }
 
 .soft i {
@@ -443,7 +443,7 @@ footer #luvbutton {
 }
 
 #header h1 {
-  color: #ccc;
+  color: #ddd;
   margin: 80px 0;
 }
 
