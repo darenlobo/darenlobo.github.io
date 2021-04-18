@@ -524,6 +524,9 @@ footer #luvbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
   background-color: #101518;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -535,12 +538,16 @@ footer #luvbutton {
 }
 
 .message h3 {
-  margin: 0 4rem 0 0;
-  width: 8rem;
+  margin: 0;
+  max-width: 32rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   color: #dd816f;
 }
 
 .message p {
+  max-width: 32rem;
   font-size: 1.5rem;
   line-height: 40px;
   font-weight: 300;
