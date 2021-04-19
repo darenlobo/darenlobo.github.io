@@ -191,7 +191,10 @@ navbar {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 2rem;
+}
+
+navbar a {
+  margin-left: 2rem;
 }
 
 footer {
@@ -270,7 +273,6 @@ footer #luvbutton {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -280,6 +282,10 @@ footer #luvbutton {
 #hero .workedwith .logo {
   width: auto;
   height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px 0;
+  margin: 20px 1rem;
   opacity: 0.8;
   -webkit-filter: contrast(60%);
           filter: contrast(60%);
@@ -295,7 +301,6 @@ footer #luvbutton {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 80px calc(calc(100vw - var(--contentWidth)) / 2) 120px;
-  gap: 80px;
 }
 
 #projects h2 {
@@ -308,6 +313,7 @@ footer #luvbutton {
 }
 
 #projects .container {
+  margin: 40px 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;

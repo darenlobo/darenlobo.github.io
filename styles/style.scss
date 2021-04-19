@@ -172,7 +172,10 @@ navbar {
   display: flex;
   padding: 1.5 * $lineHeight $pageMargin 0.5 * $lineHeight;
   justify-content: flex-end;
-  gap: 2rem;
+  // gap: 2rem;
+  a {
+    margin-left: 2rem;
+  }
 }
 
 footer {
@@ -218,12 +221,15 @@ footer {
   .workedwith {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    // gap: 2rem;
     justify-content: center;
     margin: 2 * $lineHeight 0;
     .logo {
       width: auto;
       height: $lineHeight;
+      box-sizing: border-box;
+      padding: 0.1 * $lineHeight 0;
+      margin: 0.5 * $lineHeight 1rem;
       opacity: 0.8;
       filter: contrast(60%);
     }
@@ -235,7 +241,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 2 * $lineHeight $pageMargin 3 * $lineHeight;
-  gap: 2 * $lineHeight;
+  // gap: 2 * $lineHeight;
   h2 {
     margin-bottom: 0;
   }
@@ -244,6 +250,7 @@ footer {
     left: -($lineHeight);
   }
   .container {
+    margin: $lineHeight 0;
     height: fit-content;
     position: relative;
     box-sizing: border-box;
