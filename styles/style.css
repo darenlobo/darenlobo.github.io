@@ -281,10 +281,8 @@ footer #luvbutton {
 
 #hero .workedwith .logo {
   width: auto;
-  height: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 4px 0;
+  height: 32px;
+  padding: 4px;
   margin: 20px 1rem;
   opacity: 0.8;
   -webkit-filter: contrast(60%);

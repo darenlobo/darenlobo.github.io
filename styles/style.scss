@@ -226,9 +226,8 @@ footer {
     margin: 2 * $lineHeight 0;
     .logo {
       width: auto;
-      height: $lineHeight;
-      box-sizing: border-box;
-      padding: 0.1 * $lineHeight 0;
+      height: 0.8 * $lineHeight;
+      padding: 0.1 * $lineHeight;
       margin: 0.5 * $lineHeight 1rem;
       opacity: 0.8;
       filter: contrast(60%);
