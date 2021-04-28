@@ -191,10 +191,58 @@ navbar {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-shadow: 0 6.25px 10px rgba(0, 0, 0, 0.035), 0 50px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 6.25px 10px rgba(0, 0, 0, 0.035), 0 50px 80px rgba(0, 0, 0, 0.07);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #101B20;
+}
+
+navbar #navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 navbar a {
   margin-left: 2rem;
+}
+
+navbar .fas {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 calc(calc(100vw - var(--contentWidth)) / 2);
+  }
+  navbar #navLinks {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px 0 160px;
+  }
+  navbar #navLinks a {
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+  }
+  navbar .fas {
+    display: inline-block;
+    line-height: 40px;
+    padding: 20px 1rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 footer {
@@ -349,7 +397,7 @@ footer #luvbutton {
   transition: 0.5s ease;
   background-color: inherit;
   color: white;
-  padding: 60px Max(40px, 80px);
+  padding: 60px Min(10%, 4rem);
 }
 
 #projects .container .overlay span {

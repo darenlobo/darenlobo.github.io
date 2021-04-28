@@ -15,7 +15,7 @@ $colGrey2: #cccccc;
 $lineHeight: 40px; /*1.8181818rem*/
 
 $pageMargin: calc(calc(100vw - var(--contentWidth)) / 2);
-$boxMargin: Max($lineHeight, 2 * $lineHeight) ;
+$boxMargin: Min(10%, 4rem) ;
 
 html, .root {
   font-size: 22px;
@@ -172,12 +172,48 @@ navbar {
   display: flex;
   padding: 1.5 * $lineHeight $pageMargin 0.5 * $lineHeight;
   justify-content: flex-end;
+  box-shadow:
+    0 6.25px 10px rgba(0, 0, 0, 0.035),
+    0 50px 80px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+  background-color: $colBG;
   // gap: 2rem;
+  #navLinks {
+    display: flex;
+  }
   a {
     margin-left: 2rem;
   }
+  .fas {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    flex-direction: column-reverse;
+    padding: 0 $pageMargin;
+    #navLinks {
+      display: none;
+      flex-direction: column;
+      margin: $lineHeight 0 4 * $lineHeight;
+      a {
+        padding: $lineHeight 0;
+        text-align: center;
+        margin: 0;
+      }
+    }
+    .fas {
+      display: inline-block;
+      line-height: $lineHeight;
+      padding: 0.5 * $lineHeight 1rem;
+      align-self: flex-end;
+    }
+  }
+}
 footer {
   background-color: $colBG0;
   padding: 1 * $lineHeight $pageMargin;
@@ -454,33 +490,6 @@ footer {
     margin-bottom: $lineHeight;
   }
 }
-
-// .sidetxt {
-//   color: $colGrey2;
-//   img{
-//     width: 100%;
-//     height: auto;
-//   }
-// }
-
-// .imgtxt {
-//   margin: 2 * $lineHeight 0;
-//   p {
-//     margin-top: $lineHeight;
-//   }
-// }
-
-// .column img {
-//   width: 100%;
-// }
-
-// .sidenotes .left {
-//   flex:60%;
-// }
-
-// .sidenotes .right {
-//   flex:30%;
-// }
 
 
 
