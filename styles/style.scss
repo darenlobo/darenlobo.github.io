@@ -172,9 +172,9 @@ navbar {
   display: flex;
   padding: 1.5 * $lineHeight $pageMargin 0.5 * $lineHeight;
   justify-content: flex-end;
-  box-shadow:
+  /*box-shadow:
     0 6.25px 10px rgba(0, 0, 0, 0.035),
-    0 50px 80px rgba(0, 0, 0, 0.07);
+    0 50px 80px rgba(0, 0, 0, 0.07);*/ //fix this
   box-sizing: border-box;
   background-color: $colBG;
   // gap: 2rem;
