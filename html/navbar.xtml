@@ -1,7 +1,7 @@
 <div id="navLinks">
-    <a href="https://darenlobo.me#projects">Work</a>
-    <a href="https://darenlobo.me/about">About</a>
-    <a href="https://darenlobo.me/files/resume.pdf" target="_blank">Résumé</a>
+    <a href="https://darenlobo.com#projects">Work</a>
+    <a href="https://darenlobo.com/about">About</a>
+    <a href="https://darenlobo.com/files/resume.pdf" target="_blank">Résumé</a>
     <a href="#contact">Contact</a>
 </div>
     <a href="javascript:void(0);" onclick="toggleMenu()" class="fas fa-bars"></a>

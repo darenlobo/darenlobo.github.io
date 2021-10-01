@@ -6,14 +6,14 @@
         <meta name="description" content="Educated at the IDC School of Design, IIT Bombay, I've honed my professional skills at Fractal Ink Design Studio and Microsoft.I have also spearheaded projects for startups and liaised directly with their core teams. I'm currently a Product Designer at Flipkart."/>
 
         <!-- OpenGraph Properties -->
-        <meta property="og:url" content="https://darenlobo.me"/>
+        <meta property="og:url" content="https://darenlobo.com"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Daren Lobo | UX Design Services"/>
         <meta property="og:description" content="Educated at the IDC School of Design, IIT Bombay, I've honed my professional skills at Fractal Ink Design Studio and Microsoft. I have also spearheaded projects for startups and liaised directly with their core teams. I'm currently a Product Designer at Flipkart."/>
-        <meta property="og:image" content="https://darenlobo.me/projects/folx/thumb.png"/>
+        <meta property="og:image" content="https://darenlobo.com/projects/folx/thumb.png"/>
         <!-- OpenGraph Properties End -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="shortcut icon" type="image/png" href="https://darenlobo.me/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="https://darenlobo.com/favicon.png" />
       	<link href="../../styles/style.css" rel="stylesheet" type="text/css"/>
 
 
